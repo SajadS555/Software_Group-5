@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<math.h>
-int calculator()                                                       //Binary calculator
+void calculator()                                                       //Binary calculator
 {
     int first=0,second=0,num=0,op=0;
     float result;
     printf("(1)Addition\n(2)Subtraction\n(3)Multiplication\n(4)Division\n");
     scanf("%d",&num);
-    system("cls");
      switch(num)
         {
         case 1:
@@ -67,7 +66,7 @@ default:
  
                                                                  //Number Functions 
 }
-int  primenumber()                                               //Prime or Not
+void  primenumber()                                               //Prime or Not
 {
  int n,i,flag=0;
  printf("Enter the number to check prime:");
@@ -90,7 +89,7 @@ int  primenumber()                                               //Prime or Not
  
  //     //      //      //      //      //      //      //      //      //      //      //
  
-int Amstrong()                                                 //Amstrong
+void Amstrong()                                                 //Amstrong
 {
  int n,r,sum=0,temp_a,temp_b,count=0;
  printf("enter the number=");
@@ -118,7 +117,7 @@ int Amstrong()                                                 //Amstrong
 
 //     //      //      //      //      //      //      //       //      //      //
 
-int OddorEven()                                                               //Odd or Even
+void OddorEven()                                                               //Odd or Even
 {
     int num;
     printf("Enter an integer: ");
@@ -131,7 +130,7 @@ int OddorEven()                                                               //
 
 //     //      //      //      //      //      //      //       //      //      //
 
-int Factorial()                                                             //Factorial
+void Factorial()                                                             //Factorial
 {
   int i,fact=1,number;
   printf("Enter a number: ");
@@ -153,7 +152,6 @@ int main()                                                                   //M
     printf("*To select an option please enter the corresponding number*\n");
     printf("(1)Binary calculator\n(2)Number Functions\n");
     scanf("%d",&a);
-    system("cls");
     if(a==1){
         calculator();
     }
@@ -161,7 +159,6 @@ int main()                                                                   //M
     {
         printf("(1)Prime checker\n(2)Amstrong number\n(3)Odd or Even\n(4)Factorial\n");
         scanf("%d",&b);
-        system("cls");
         switch(b)
         {
         case 1:
