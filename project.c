@@ -7,7 +7,7 @@ int calculator()                                                       //Binary 
     float result;
     printf("(1)Addition\n(2)Subtraction\n(3)Multiplication\n(4)Division\n");
     scanf("%d",&num);
-    system("cls");
+    
      switch(num)
         {
         case 1:
@@ -153,7 +153,7 @@ int main()                                                                      
     printf("*To select an option please enter the corresponding number*\n");
     printf("(1)Binary calculator\n(2)Number Functions\n");
     scanf("%d",&a);
-    system("cls");
+    
     if(a==1){
         calculator();
     }
