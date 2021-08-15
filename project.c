@@ -62,6 +62,7 @@ default:
     printf("Not possible");
     break;
  }
+ return 0;
  
  //     //      //      //      //      //      //      //      //      //      //
  
@@ -85,6 +86,7 @@ int  primenumber()                                               //Prime or Not
  printf("%d is a prime number\n",n);
  printf("Definition:\n");
  printf(" A prime number is a number greater than 1 with only two factors – themselves and 1\n");
+ return 0;
  }
  
  
@@ -114,6 +116,7 @@ int Amstrong()                                                 //Amstrong
  printf("Definition:\n");
  printf("An Armstrong number of three digits is an integer such that the sum of the cubes of its digits is equal to the number itself.");
  printf("\n For example, 371 is an Armstrong number since 3**3 + 7**3 + 1**3 = 371.");
+ return 0;
 }
 
 //     //      //      //      //      //      //      //       //      //      //
@@ -127,6 +130,8 @@ int OddorEven()                                                               //
         printf("%d is even.", num);
     else
         printf("%d is odd.", num);
+        return 0;
+
 }
 
 //     //      //      //      //      //      //      //       //      //      //
@@ -143,6 +148,7 @@ int Factorial()                                                             //Fa
   printf("Factorial of %d is: %d\n",number,fact);
   printf("Definition:\n");
   printf("Factorial of a number is the The product of all of the positive integers from 1 to a given positive integer");
+  return 0;
 }
 
 //     //      //      //      //      //      //      //       //      //      //      //
@@ -161,7 +167,7 @@ int main()                                                                      
     {
         printf("(1)Prime checker\n(2)Amstrong number\n(3)Odd or Even\n(4)Factorial\n");
         scanf("%d",&b);
-        system("cls");
+        
         switch(b)
         {
         case 1:
