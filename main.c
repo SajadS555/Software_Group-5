@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<math.h>
-int calculator()
+int calculator()                                                       //Binary calculator
 {
     int first=0,second=0,num=0,op=0;
     float result;
@@ -34,22 +34,22 @@ int calculator()
  switch(op)
  {
  case 1:
-    result=first+second;
-    printf("%f",result);
+    result=first+second;                                            //Addition
+    printf("%d + %d = %f",first,second,result);
     break;
 case 2:
-    result=first-second;
-    printf("%f",result);
+    result=first-second;                                           //Subtraction
+    printf("%d - %d = %f",first,second,result);
     break;
 case 3:
-    result=first*second;
-    printf("%f",result);
+    result=first*second;                                           //Multiplication
+    printf("%d * %d = %f",first,second,result);
     break;
 case 4:
     if(second!=0)
     {
-        result=first/second;
-        printf("%f",result);
+        result=first/second;                                       //Division
+        printf("%d / %d = %f",first,second,result);
         break;
     }
 
@@ -62,9 +62,12 @@ default:
     printf("Not possible");
     break;
  }
-
+ 
+ //     //      //      //      //      //      //      //      //      //      //
+ 
+                                                                 //Number Functions 
 }
-int  primenumber()
+int  primenumber()                                               //Prime or Not
 {
  int n,i,flag=0;
  printf("Enter the number to check prime:");
@@ -73,15 +76,21 @@ int  primenumber()
  {
  if(n%i==0)
  {
- printf("%d is not prime",n);
+ printf("%d is not a prime number\n",n);
  flag=1;
  break;
  }
  }
  if(flag==0)
- printf("%d is prime",n);
+ printf("%d is a prime number\n",n);
+ printf("Definition:\n");
+ printf(" A prime number is a number greater than 1 with only two factors – themselves and 1\n");
  }
-int Amstrong()
+ 
+ 
+ //     //      //      //      //      //      //      //      //      //      //      //
+ 
+int Amstrong()                                                 //Amstrong
 {
  int n,r,sum=0,temp_a,temp_b,count=0;
  printf("enter the number=");
@@ -99,11 +108,17 @@ int Amstrong()
  temp_a/=10;
  }
  if(temp_b==sum)
- printf("%d is an Amstrong  number ",temp_b);
+ printf("%d is an Amstrong  number\n",temp_b);
  else
- printf("%d is not an Amstrong number",temp_b);
+ printf("%d is not an Amstrong number\n",temp_b);
+ printf("Definition:\n");
+ printf("An Armstrong number of three digits is an integer such that the sum of the cubes of its digits is equal to the number itself.");
+ printf("\n For example, 371 is an Armstrong number since 3**3 + 7**3 + 1**3 = 371.");
 }
-int OddorEven()
+
+//     //      //      //      //      //      //      //       //      //      //
+
+int OddorEven()                                                               //Odd or Even
 {
     int num;
     printf("Enter an integer: ");
@@ -113,7 +128,10 @@ int OddorEven()
     else
         printf("%d is odd.", num);
 }
-int Factorial()
+
+//     //      //      //      //      //      //      //       //      //      //
+
+int Factorial()                                                             //Factorial
 {
   int i,fact=1,number;
   printf("Enter a number: ");
@@ -122,12 +140,17 @@ int Factorial()
   {
     fact=fact*i;
   }
-  printf("Factorial of %d is: %d",number,fact);
+  printf("Factorial of %d is: %d\n",number,fact);
+  printf("Definition:\n");
+  printf("Factorial of a number is the The product of all of the positive integers from 1 to a given positive integer");
 }
 
-int main()
+//     //      //      //      //      //      //      //       //      //      //      //
+
+int main()                                                                   //Menu
 {
     int a,b,c;
+    printf("*To select an option please enter the corresponding number*\n");
     printf("(1)Binary calculator\n(2)Number Functions\n");
     scanf("%d",&a);
     system("cls");
@@ -159,3 +182,8 @@ int main()
         }
     }
 }
+
+//Group 5
+//Abhijith TP
+//Sajad S
+//Nafila KP
